@@ -1,0 +1,79 @@
+.header {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.header-text {
+    font-size: 54px;
+    text-align: center;
+}
+
+.header > .hero-text-wrapper {
+    max-width: 728px;
+    margin: 0 auto;
+    font-family: 'Roboto Light', sans-serif;
+    font-size: 40px;
+    color: #444444;
+}
+
+.about {
+    text-align: center;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    max-width: 728px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.section-header {
+    font-family: 'Roboto Light', sans-serif;
+    font-size: 38px;
+    color: #484848;
+}
+
+.main-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #555555;
+    line-height: 1.75em;
+}
+
+.link-list {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.link-list > .link {
+    margin: 10px;
+}
+
+.link-list > .link > .social-link {
+    box-sizing: border-box;
+    display: block;
+    padding: 10px;
+    font-size: 24px;
+    color: #333333;
+}
+
+.link-list > .link > .social-link:active,
+.link-list > .link > .social-link:hover {
+    color: #555555;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.center > .section-header {
+    text-align: center;
+}
