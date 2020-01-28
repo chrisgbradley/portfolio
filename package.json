@@ -1,0 +1,11 @@
+{
+  "name": "cb_portfolio",
+  "version": "0.0.1",
+  "description": "Personal Web Portfolio for Christian G Bradley.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christian G Bradley",
+  "license": "MIT"
+}
