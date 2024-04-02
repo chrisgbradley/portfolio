@@ -52,11 +52,35 @@ p {
 	padding: 20px;
 }
 
-.profile-pic {
+.circle-pic {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
 	border-radius: 50%;
+	width: 400px;
+	height: 400px;
+}
+
+.profile-pic {
+	height: 625px;
 }
 
 .social-links {
+	display: flex;
+	justify-content: space-evenly;
 	text-align: center;
 	padding-top: 15px;
+	color: #000;
+}
+
+.social-links a {
+	color: #000;
+}
+
+.social-links a:hover {
+	color: #444;
+}
+
+.social-links a:focused {
+	color: purple;
 }

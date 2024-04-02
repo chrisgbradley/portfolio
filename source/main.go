@@ -31,6 +31,7 @@ func main() {
 	e.Renderer = newTemplate()
 
 	e.Static("/css", "css")
+	e.Static("/images", "images")
 
 	e.GET("/", func(c echo.Context) error {
 		return c.Render(200, "index", 0)
