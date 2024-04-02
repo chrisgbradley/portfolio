@@ -14,7 +14,7 @@ I'm a software developer that is moving over from from doing software field serv
 - [ ] Project YAML -> HTMX added
 - [ ] Docker Setup
 - [ ] Server Built
-- [ ] GitHub Actions
+- [ ] CI/CD for future updates
 
 ## Projects
 
