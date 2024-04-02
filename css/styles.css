@@ -1,0 +1,62 @@
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body { 
+	font-size: 1.25em;
+}
+
+section {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+	font-family: "Raleway", sans-serif;
+	font-weight: 900;
+}
+
+p {
+	font-family: "Anonymous Pro", sans-serif;
+	font-weight: 400;
+}
+
+.introduction {
+	display: flex;
+	flex-direction: row;
+
+}
+
+.name {
+	font-size: 2.2em;
+}
+
+.tagline {
+	font-size: 1.4em;
+	font-weight: 700;
+}
+
+.tagline > .small {
+	font-size: .75em;
+	font-weight: 600;
+	color: #999;
+}
+
+.left {
+	max-width: 60%;
+	padding: 40px 20px;
+}
+
+.right {
+	padding: 20px;
+}
+
+.profile-pic {
+	border-radius: 50%;
+}
+
+.social-links {
+	text-align: center;
+	padding-top: 15px;
+}
