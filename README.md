@@ -10,7 +10,7 @@ I'm a software developer that is moving over from from doing software field serv
 ## Status
 
 - [x] Go HTTP server
-- [ ] Intro added and styled
+- [x] Intro added and styled
 - [ ] Project YAML -> HTMX added
 - [ ] Docker Setup
 - [ ] Server Built
