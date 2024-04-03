@@ -22,10 +22,11 @@ p {
 	font-weight: 400;
 }
 
-.introduction {
+#introduction {
 	display: flex;
 	flex-direction: row;
-
+	justify-content: space-between;
+	padding-top: 50px;
 }
 
 .name {
@@ -45,11 +46,11 @@ p {
 
 .left {
 	max-width: 60%;
-	padding: 40px 20px;
+	
 }
 
 .right {
-	padding: 20px;
+	
 }
 
 .circle-pic {
@@ -83,4 +84,10 @@ p {
 
 .social-links a:focused {
 	color: purple;
+}
+
+#featured {
+	padding-top: 50px;
+}
+#projects {
 }

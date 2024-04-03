@@ -1,0 +1,5 @@
+---
+name: "example-projectB"
+description: "lorem ipsum"
+tags: ["go", "rust", "typescript"]
+link: "github.com/chrisgbradley"

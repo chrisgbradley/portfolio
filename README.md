@@ -11,7 +11,7 @@ I'm a software developer that is moving over from from doing software field serv
 
 - [x] Go HTTP server
 - [x] Intro added and styled
-- [ ] Project YAML -> HTMX added
+- [x] Project YAML -> HTMX added
 - [ ] Docker Setup
 - [ ] Server Built
 - [ ] CI/CD for future updates

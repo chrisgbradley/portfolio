@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	</head>
 	<body>
-		<section class="introduction">
+		<section id="introduction">
 			<div class="left">
 				<h1 class="name">Christian Bradley</h1>
 				<h2 class="tagline"><strong>Software Engineer</strong><span class="small"><em> - Charlotte, NC</em></span></h2>
@@ -31,9 +31,21 @@
 				</div>
 			</div>
 		</section>
-		<section class="projects">
+		<section id="featured">
+			<div id="projects">
+				{{ range .Data.Projects }}
+					{{ template "project" . }}
+				{{ end }}
+			</div>
 		</section>
 	</body>
 </html>
 {{ end }}
-  
+
+{{ block "project" . }}
+<div id="project-{{ .Id }}">
+	<h2>{{.Name}}</h2>
+	<p>{{ .Description }}</p>
+	<a href="{{.Link}}">See the project</a>
+</div>
+{{ end }}
