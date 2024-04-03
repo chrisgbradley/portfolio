@@ -25,7 +25,7 @@ Tracking for projects that I have completed, am currently working on, and plan t
 - [ ] Real-time Chat Terminal
 - [ ] Terminal Hangman
 - [ ] Compiler
-- [ ] Rework of ITSC-4155 project in Go
+- [ ] Rework of [ITSC-4155-WifiAnalytics](https://github.com/chrisgbradley/ITSC4155-WiFiAnalytics) project in Go (need new, similar source of data)
 - [ ] HTTPS Server from scratch
 - [ ] DNS Server from scratch
 - [ ] VPN Server from scratch
