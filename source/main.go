@@ -29,6 +29,8 @@ func newTemplate() *Templates {
 
 var id = 0
 
+// TODO: Break Project and Projects types, functions, etc. into separate file
+// FIXME: Fix the Projects/Project nomensclature for clarifcation -- impossible to read at the moment
 type Project struct {
 	Id          int
 	Name        string   `yaml: name`
@@ -37,25 +39,16 @@ type Project struct {
 	Description string   `yaml: description`
 }
 
-type Projects = []Project
-
-func newProject(name string, description string, tags []string, link string) Project {
-	id++
-	return Project{
-		Id:          id,
-		Name:        name,
-		Description: description,
-		Tags:        tags,
-		Link:        link,
-	}
+type Projects struct {
+	Projects []Project
 }
 
 func initProjects() Projects {
 	entries, err := filepath.Glob(PROJECTS_DATA)
-	var projects = Projects{}
+	var projects = Projects{Projects: []Project{}}
 
 	if err != nil {
-		panic("dir read fucked")
+		panic("Directory is empty or other error found.")
 	}
 
 	for _, entry := range entries {
@@ -64,36 +57,16 @@ func initProjects() Projects {
 		id++
 		file, err := os.ReadFile(entry)
 		if err != nil {
-			panic("file read fucked")
+			panic("File unable to be read.")
 		}
 		err = yaml.Unmarshal(file, &p)
 		if err != nil {
-			panic("yaml parse fucked")
+			panic("Unable to unmarshal/parse the yaml file.")
 		}
-		projects = append(projects, p)
+		projects.Projects = append(projects.Projects, p)
 	}
 
 	return projects
-}
-
-type Data struct {
-	Projects Projects
-}
-
-func newData() Data {
-	return Data{
-		Projects: initProjects(),
-	}
-}
-
-type Page struct {
-	Data Data
-}
-
-func newPage() Page {
-	return Page{
-		Data: newData(),
-	}
 }
 
 func main() {
@@ -102,14 +75,14 @@ func main() {
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
 
-	page := newPage()
+	projects := initProjects()
 	e.Renderer = newTemplate()
 
 	e.Static("/css", "css")
 	e.Static("/images", "images")
 
 	e.GET("/", func(c echo.Context) error {
-		return c.Render(200, "index", page)
+		return c.Render(200, "index", projects)
 	})
 
 	e.Logger.Fatal(e.Start(":1324"))
