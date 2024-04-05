@@ -12,9 +12,10 @@ I'm a software developer who is moving over from doing software field service. I
 - [x] Go HTTP server
 - [x] Intro added and styled
 - [x] Project YAML -> HTMX added
-- [ ] Docker Setup
-- [ ] Server Built
-- [ ] CI/CD for future updates
+- [ ] CI/CD
+  - [ ] Docker Setup
+  - [ ] Server Built
+  - [ ] Caddy Setup (HTTPS-only Enabled)
 
 ## Projects
 
