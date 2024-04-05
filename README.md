@@ -18,7 +18,9 @@ I'm a software developer who is moving over from doing software field service. I
 
 ## Projects
 
-Tracking for projects that I have completed, am currently working on, and plan to start in the near future. There is no rhyme or reason to the project order and it's just something for me to pick from as I progress. As I complete the projects, I will check them off, add a link to the GitHub repository, and update the portfolio `/data/projects/{{project}}.yaml`.
+Tracking for projects that I have completed, am currently working on, and plan to start in the near future. There is no rhyme or reason to the project order and it's just something for me to pick from as I complete one and want something new to work on. Having them here is just easier than having them in my notebook and allows others to stumble across a list of ideas that go beyond a Twitter clone or to-do list. 
+
+_As I complete the projects, I will check them off, add a link to the GitHub repository, and update the portfolio `/data/projects/{{project}}.yaml`._
 
 - [ ] Simple Web Server (this portfolio)
 - [ ] Spotify CLI/NeoVim Tool
