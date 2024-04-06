@@ -38,3 +38,4 @@ _As I complete the projects, I will check them off, add a link to the GitHub rep
 - [ ] Text Editor
 - [ ] Graph Visualizer for Github repos (like Obsidian Notes)
 - [ ] Algorithm Visualizer
+- [ ] Spinning "3D" Shapes in Terminal
