@@ -15,6 +15,7 @@ I'm a software developer who is moving over from doing software field service. I
 - [ ] CI/CD
   - [ ] Docker Setup
   - [ ] Server Built
+  - [ ] GitHub Workflow
   - [ ] Caddy Setup (HTTPS-only Enabled)
 
 ## Projects
