@@ -1,10 +1,6 @@
 FROM golang:1.22 AS build
 
-COPY ./source /portfolio/source
-COPY ./data /portfolio/data
-COPY ./views /portfolio/views
-COPY ./www /portfolio/www
-COPY go.* /portfolio
+COPY ./ /portfolio
 
 WORKDIR /portfolio
 
@@ -15,4 +11,4 @@ FROM alpine:3.19
 RUN apk add gcompat
 COPY --from=build /portfolio /portfolio
 WORKDIR /portfolio
-ENTRYPOINT ["./portfolio"]
+CMD ["./portfolio"]
