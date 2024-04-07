@@ -13,9 +13,9 @@ I'm a software developer who is moving over from doing software field service. I
 - [x] Intro added and styled
 - [x] Project YAML -> HTMX added
 - [ ] CI/CD
-  - [ ] Docker Setup
+  - [x] Docker Setup
   - [ ] Server Built
-  - [ ] GitHub Workflow
+  - [ ] Watchtower Setup
   - [ ] Caddy Setup (HTTPS-only Enabled)
 
 ## Projects
@@ -39,4 +39,5 @@ _As I complete the projects, I will check them off, add a link to the GitHub rep
 - [ ] Text Editor
 - [ ] Graph Visualizer for Github repos (like Obsidian Notes)
 - [ ] Algorithm Visualizer
-- [ ] Spinning "3D" Shapes in Terminal
+- [ ] Spinning "3D" Shapes in Terminal (square, pyramid)
+- [ ] Render videos in ASCII art in the terminal (specify color ranges that receive a specific character)
