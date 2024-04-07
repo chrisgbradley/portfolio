@@ -78,8 +78,7 @@ func main() {
 	projects := initProjects()
 	e.Renderer = newTemplate()
 
-	e.Static("/css", "css")
-	e.Static("/images", "images")
+	e.Static("/", "www")
 
 	e.GET("/", func(c echo.Context) error {
 		return c.Render(200, "index", projects)
