@@ -12,11 +12,11 @@ I'm a software developer who is moving over from doing software field service. I
 - [x] Go HTTP server
 - [x] Intro added and styled
 - [x] Project YAML -> HTMX added
-- [ ] CI/CD
+- [ ] Published
   - [x] Docker Setup
-  - [ ] Server Built
-  - [ ] Watchtower Setup
-  - [ ] Caddy Setup (HTTPS-only Enabled)
+  - [x] Server Built
+  - [x] Reverse Proxy Setup
+  - [ ] HTTPS-only Enabled
 
 ## Projects
 
