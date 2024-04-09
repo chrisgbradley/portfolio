@@ -8,6 +8,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="/css/styles.css">
+		<script src="/js/main.js"></script>
 		<script src="https://unpkg.com/htmx.org@1.9.9" integrity="sha384-QFjmbokDn2DjBjq+fM+8LUIVrAgqcNW2s0PjAxHETgRn9l4fvX31ZxDxvwQnyMOX" crossorigin="anonymous"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,8 +27,8 @@
 					<image class="profile-pic" src="/images/profile-pic.jpg" alt="profile-picture"/>
 				</div>
 				<div class="social-links">
-					<a href="github.com/chrisgbradley"><i class="fa-brands fa-github fa-2xl"></i></a>
-					<a href="linkedin.com/chrisgbradley"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+					<a href="https://github.com/chrisgbradley"><i class="fa-brands fa-github fa-2xl"></i></a>
+					<a href="https://linkedin.com/chrisgbradley"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
 				</div>
 			</div>
 		</section>
@@ -45,7 +46,12 @@
 {{ block "project" . }}
 <div id="project-{{ .Id }}">
 	<h2>{{.Name}}</h2>
-	<p>{{ .Description }}</p>
-	<a href="{{.Link}}">See the project</a>
+		<div class="tags">
+		{{ range .Tags }}
+			<div class="tag">{{.}}</div>
+		{{ end }}
+	</div>
+<p>{{ .Description }}</p>
+	<a class="project-link" href="{{.Link}}">See the project</a>
 </div>
 {{ end }}

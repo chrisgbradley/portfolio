@@ -22,6 +22,11 @@ p {
 	font-weight: 400;
 }
 
+a { 
+	font-family: "Anonymous Pro", sans-serif;
+	font-weight: 400;
+}
+
 #introduction {
 	display: flex;
 	flex-direction: row;
@@ -90,4 +95,38 @@ p {
 	padding-top: 50px;
 }
 #projects {
+}
+
+#projects .tags {
+	display: flex;
+}
+
+#projects .tags .tag {
+	background-color: #DDD;
+	color: #333;
+	padding: 5px 18px;
+	margin-right: 10px;
+	border-radius: 3px;
+	font-size: .75em;
+}
+
+.project-link {
+	display: inline-block;
+	background-color: #000;
+	color: #FFF;
+	padding: 10px 20px;
+	border-radius: 3px;
+	margin-top: 10px;
+	text-decoration: none;
+	transition: all .2s ease;
+}
+
+.project-link:hover {
+	background-color: #DDD;
+	color: #444;
+}
+
+.project-link:active {
+	background-color: #665687;
+	color: #444;
 }

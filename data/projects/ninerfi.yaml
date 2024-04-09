@@ -1,0 +1,5 @@
+---
+name: "Niner-Fi Analytics"
+description: "NinerFi Analytics is a challenge that our team took on for our UNCC Computer Science Software Engineering capstone course. The UNC Charlotte campus has a large number of Aruba Wi-Fi access points around the university that track data such as connections, disconnections, handoffs, errors, and more. With over 500GB of logs over the course of a year and half, our primary goal was to interpret all 500GB of data in a web portal visualization. With this non-trivial amount of data, the following was necessary: extracting and storing only the necessary information in a user-friendly manner, actively storing and aggregating the data without locking information and halting requests, and visualizing the data in a useful and engaging manner."
+tags: ["C#", "WPF", "Regex", "ASP.NET", "JS", "SQL Server"]
+link: "https://github.com/chrisgbradley/ITSC4155-WiFiAnalytics"
