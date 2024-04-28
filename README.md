@@ -5,7 +5,7 @@
 
 A repository for my public portfolio.
 
-I'm a software developer who is moving over from doing software field service. I like working in Go and occasionally dabbling in C#, Rust, Python, and TypeScript, depending on the project.
+I'm a hobby dev that does some IT stuff. I like working in Go and occasionally dabbling in C#, Rust, Python, and TypeScript, depending on the project.
 
 ## Status
 
